@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukla Media</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body style="background-color: #282828;">
+    <style>
+        /* Common styles */
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #282828;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .navbar h1 {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: larger;
+            position: absolute;
+            top: 10px;
+            left: 90px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }
+        .hamburger {
+            display: none;
+        }
+        .mobile-menu {
+            display: none;
+        }
+    
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+            .mobile-menu {
+                display: none;
+                position: relative;
+                top: 10px;
+                right: 0;
+                background-color: #282828;
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+            .mobile-menu a {
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+                color: white;
+                padding-bottom: 50px;
+            }
+        }
+    </style>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector(".mobile-menu");
+            mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+<div class="navbar">
+    <a href="main.html"><img src="images/luklamedia 1.png" alt="Lukla Media" width="52px"></a>
+    <a href="main.html"><h1>Lukla Media</h1></a>
+    <div class="nav-links">
+        <a href="main.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+    </div>
+</div>
+<div class="mobile-menu">
+    <a href="main.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="about.html">About</a>
+</div>
+
+
+    <div class="parentContainer">
+        <img src="images/about.png" alt="Blog Header">
+        <div class="centered">
+            <h1 style="font-family: Inter; font-weight: 500; text-align: center; position: relative; color: white;">About Lukla Media</h1> 
+        </div>
+    </div>
+    
+
+<p class="about-us-text">
+    Welcome to Lukla Media, a digital agency that was founded in 2021. We are a team of creative professionals who are passionate about delivering exceptional digital experiences to our clients. Our mission is to help businesses succeed online by providing them with the best digital solutions.
+    <br><br>
+    At Lukla Media, we specialize in a variety of services, including digital product design, website design, content creation, content strategy, and social media branding. Our team of experts works collaboratively to deliver customized solutions that meet the unique needs of each client.
+    <br><br>
+    We believe that great design and content are essential to building a strong online presence. That's why we work closely with our clients to understand their goals and develop a strategy that will help them achieve success. Whether you need a new website, compelling content, or a social media strategy, we are here to help.
+    <br><br>
+    Our team is dedicated to providing the highest level of customer service. We believe that communication and collaboration are key to success, which is why we work closely with our clients every step of the way. We pride ourselves on delivering projects on time and on budget, without sacrificing quality.
+    <br><br>
+    We are excited to partner with you and help you achieve your digital goals. Contact us today to learn more about our services and how we can help your business succeed online.
+    </p>
+
+    <div id="contact-box">
+        <div class="contact-form">
+                <div class="contact-grid">
+                <h1 id="lastheading" style="font-family: Inter; font-size: 40px; color: #3e3e3e; opacity: 90%; font-weight: 400; padding-left: 25px; padding-top: 60px;">
+                    Come and work with us
+                </h1>
+                <p style="width: 80%; font-family: Inter; font-size: 20px; color:#3e3e3e; opacity: 80%; padding-left: 30px;">We help brands live on their customer’s mind. We work all over the world remotely, but our headquarter is based in Nepal.</p>
+            </div>
+        
+            <div class="contact-grid"></div>
+            <form>
+                <label for="Name"></label>
+                <input style="padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Name"><br>
+                <label for="Email"></label>
+                <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA; opacity: 100%;  background-color: #3e3e3e; border: 0;" type="email" placeholder="Email address"><br>
+                <label for="Subject"></label>
+                <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Subject"><br>
+                <label for="Budget"></label>
+                <input style="margin-top: 10px; padding: 10px; margin-bottom: 5px; width: 43%; font-family: Inter; color: #888787;  background-color: #3e3e3e; border: 0;" type="number" placeholder="Budget"><br>
+                <label for="Message"></label>
+                <textarea style="padding: 10px; width: 43%; font-family: Inter; color: #787575;  margin-top: 5px; background-color: #3e3e3e;" name="w3review" rows="4" cols="50">Message:</textarea>
+            </form>
+                <a href="submit.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Submit</button></a>
+           
+            </div>
+            </div>
+            <div id="footer-line" style="height: 2px; background-color: #3e3e3e; opacity: 80%; margin-top: 30px; width: 100%; margin-left: auto; margin-right: auto;"></div>
+            <p id="footer" style="font-family: Inter; text-align: center; color: #AAAAAA; padding: 5px;">© 2023 Lukla Media. All Rights Reserved.</p>
+        </div>
+
+</body>
+</html>

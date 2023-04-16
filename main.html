@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukla Media</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body style="background-color: #282828;">
+    
+    <style>
+        /* Common styles */
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #282828;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .navbar h1 {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: larger;
+            position: absolute;
+            top: 10px;
+            left: 90px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }
+        .hamburger {
+            display: none;
+        }
+        .mobile-menu {
+            display: none;
+        }
+    
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+            .mobile-menu {
+                display: none;
+                position: relative;
+                top: 10px;
+                right: 0;
+                background-color: #282828;
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+            .mobile-menu a {
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+                color: white;
+                padding-bottom: 50px;
+            }
+        }
+    </style>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector(".mobile-menu");
+            mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+<div class="navbar">
+    <a href="main.html"><img src="images/luklamedia 1.png" alt="Lukla Media" width="52px"></a>
+    <a href="main.html"><h1>Lukla Media</h1></a>
+    <div class="nav-links">
+        <a href="main.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+    </div>
+</div>
+<div class="mobile-menu">
+    <a href="main.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="about.html">About</a>
+</div>
+
+        <div style="display: flex; justify-content: center;">
+            <img style="width: 96%; padding-top: 5px;" src="images/image 1.png" alt="hero image">
+        </div>
+
+    <div class="float-container" style="background-color: #282828; height: 200px;">
+        <div class="float-child" style="width: 520px; padding-left: 25px;">
+            <h1 style="font-family: Inter; font-size: 40px; color: rgb(255, 255, 255); font-weight: 400;">We help brands live on their customer's mind.</h1>
+        </div>
+        <div class="float-child">
+            <p style="font-family: Inter; font-size: 20px; color:rgb(255, 255, 255); padding-top: 30px;">We help create the perfect visual brand mark for a business. Plug with us to plug with your customers.</p>
+        </div>
+    </div>
+ 
+    <div class="floating-container" style="background-color: #D8E2FC; height: 500px;">
+        <h1 style="font-family: Inter; font-size: 40px; color: #282828; font-weight: 400; padding-top:40px; padding-left: 25px; padding-bottom: 0px;">Our services</h1>
+        <div class="floating-child">
+            <p style="font-family: Inter; font-size: 21px; color:#282828; opacity: 80%; margin-top: -20px; padding-left: 5px;">
+            We believe that good results come from close collaborations, joint ambitions and mutual respect. With a dedicated approach to each task at hand we use design to make a positive impact - for our customers around our shared surroundings.
+        </p>
+        <ul style="font-family: Inter; font-size: 20px; color: #282828; opacity: 80%; font-weight: 400; padding-left: 30px;">
+            <li>Digital product design</li>
+            <li>Website design</li>
+            <li>Content creation</li>
+            <li>Content strategy</li>
+            <li>Social Media Branding</li>
+        </ul>
+        </div>
+        
+        <div class="floating-child">
+            <img src="images/image 2.png" alt="services image" style="width: 60%; float: right; margin-top: -125px; display: flex;">
+        </div>
+    </div>
+        <h1 style="font-family: Inter; font-size: 40px; color: rgb(255, 255, 255); font-weight: 400; padding-left: 40px; padding-top: 40px;">See some of our works</h1>    
+    <div class="project-container1" style="padding-left: 20px;">
+        <div class="project1">
+            <img src="images/abs.png" alt="Abs Mechial">
+            <p style="font-family:Inter; font-size: larger; font-weight:400; color: white">Abs Mechial -> <br>
+                <span style="font-family:Inter; font-size: medium; font-weight:200; color: white">Digital product design</span></p>
+        </div>
+        
+        <div class="project1">
+            <img src="images/detsec.png" alt="Detailing Secrets">
+            <p style="font-family:Inter; font-size: larger; font-weight:400; color: white">Detailing Secrets -> <br>
+                <span style="font-family:Inter; font-size: medium; font-weight:200; color: white">Social media marketing</span></p>
+        </div>
+    </div>
+    
+    <div class="project-container2" style="padding-left: 20px;">
+        <div class="project2">
+            <img src="images/pedro.png" alt="Pedro Nuno">
+            <p style="font-family:Inter; font-size: larger; font-weight:400; color: white">Pedro Nuno -> <br>
+                <span style="font-family:Inter; font-size: medium; font-weight:200; color: white">Content design</span></p>
+        </div>
+        <div class="project2">
+            <img src="images/wealthx.png" alt="WealthX Chats">
+            <p style="font-family:Inter; font-size: larger; font-weight:400; color: white">WealthX Chats -> <br>
+                <span style="font-family:Inter; font-size: medium; font-weight:200; color: white">Content strategy & design</span></p>
+        </div>
+    </div>
+
+<div class="new-div">    
+</div>
+<div style="background-color:#E6E6E6; height: 660px;">
+    <h1 style="font-family: Inter; font-size: 40px; color: #282828; font-weight: 400; padding-left: 40px; padding-top: 60px;">
+        What our clients say about us
+    </h1>
+        <div class="testimonial">
+            <div class="testimonial1">
+                <img src="images/test1.png" alt="test 1" style="width: 100%;">
+                <div style="background-color: #D9D9D9; padding: 10px; margin-top: -10px;">
+                    <p>I had a good experience with Nischal. He helped me to put together some content ideas and Instagram posts which
+                        gave me more time to work with new projects and clients. <br> <br><span style="font-size: larger; font-weight: 500; opacity: 80%;">Laura Lohk</span>
+                    <br><span style="opacity: 80%">Business Coach</span></p>
+                </div>
+            </div>
+            <div class="testimonial1">
+                <img src="images/test2.png" alt="test 2" style="width: 100%;">
+                <div style="background-color: #D9D9D9; padding: 10px; margin-top: -10px;">
+                    <p>I had a good experience with Nischal. He helped me to put together some content ideas and Instagram posts which
+                        gave me more time to work with new projects and clients. <br> <br><span style="font-size: larger; font-weight: 500; opacity: 80%;">Laura Lohk</span>
+                    <br><span style="opacity: 80%">Business Coach</span></p>
+                </div>
+            </div>
+            <div class="testimonial1">
+                <img src="images/test3.png" alt="test 3" style="width: 100%;">
+                <div style="background-color: #D9D9D9; padding: 10px; margin-top: -10px;">
+                    <p>I had a good experience with Nischal. He helped me to put together some content ideas and Instagram posts which
+                        gave me more time to work with new projects and clients. <br> <br><span style="font-size: larger; font-weight: 500; opacity: 80%;">Laura Lohk</span>
+                    <br><span style="opacity: 80%">Business Coach</span></p>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="contact-form" style="background-color: #282828; height: 400px;">
+    <div class="contact-grid">
+        <h1 style="font-family: Inter; font-size: 40px; color: white; font-weight: 400; padding-left: 25px; padding-top: 60px;">
+            Come and work with us
+        </h1>
+        <p style="width: 80%; font-family: Inter; font-size: 20px; color:#AAAAAA; padding-left: 30px;">We help brands live on their customer’s mind. We work all over the world remotely, but our headquarter is based in Nepal.</p>
+    </div>
+
+    <div class="contact-grid"></div>
+    <form style="font-family: Inter; font-size: 20px; padding-top:40px;">
+        <label for="Name"></label>
+        <input style="padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Name"><br>
+        <label for="Email"></label>
+        <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="email" placeholder="Email address"><br>
+        <label for="Subject"></label>
+        <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Subject"><br>
+        <label for="Budget"></label>
+        <input style="margin-top: 10px; padding: 10px; margin-bottom: 5px; width: 43%; font-family: Inter; color: #888787;  background-color: #3e3e3e; border: 0;" type="number" placeholder="Budget"><br>
+        <label for="Message"></label>
+        <textarea style="padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA; opacity: 50%; margin-top: 5px; background-color: #615f5f;" name="w3review" rows="4" cols="50">Message:</textarea>
+    </form>
+    <a href="submit.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Submit</button></a>
+</div>
+<div style="background-color:#3e3e3e; height: 2px;"></div>
+<div style="background-color: #282828; height: 40px;">
+<p style="font-family: Inter; text-align: center; color: #AAAAAA; padding: 5px;">© 2023 Lukla Media. All Rights Reserved.</p></div>
+</body>
+</html>

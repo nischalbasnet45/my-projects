@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukla Media</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body style="background-color: #282828;">
+ <style>
+        /* Common styles */
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #282828;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .navbar h1 {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: larger;
+            position: absolute;
+            top: 10px;
+            left: 90px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }
+        .hamburger {
+            display: none;
+        }
+        .mobile-menu {
+            display: none;
+        }
+    
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+            .mobile-menu {
+                display: none;
+                position: relative;
+                top: 10px;
+                right: 0;
+                background-color: #282828;
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+            .mobile-menu a {
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+                color: white;
+                padding-bottom: 50px;
+            }
+        }
+    </style>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector(".mobile-menu");
+            mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+<div class="navbar">
+    <a href="main.html"><img src="images/luklamedia 1.png" alt="Lukla Media" width="52px"></a>
+    <a href="main.html"><h1>Lukla Media</h1></a>
+    <div class="nav-links">
+        <a href="main.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+    </div>
+</div>
+<div class="mobile-menu">
+    <a href="main.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="about.html">About</a>
+</div>
+
+<h1 style="padding-left: 30px; font-family: Inter; font-size: 47px; color: rgb(255, 255, 255); font-weight: 400;">
+    We help create the perfect visual brand mark for a business. Plug with us to plug with your customers.
+</h1>
+<div style="background-color:#3e3e3e; height: 2px; margin: auto; width: 98%; margin-top: 40px;">
+</div>
+<div class="services-container">
+<div class="services" style="padding-left: 30px; padding-top: 30px;">
+    <h4 style="font-family:Inter; font-size:larger; font-weight: 500; color:white;">01</h4>
+    <h3 style="margin-top:-5px; font-family: Inter; font-size: 47px; color: rgb(255, 255, 255); font-weight: 400;">
+        Digital product design
+    </h3>
+    <p style="font-family: Inter; font-size: 20px; color:#FFFFFF; opacity: 80%; margin-top: -15px; ">
+        We believe that good results come from close collaborations, joint ambitions and mutual respect. With a dedicated approach to each task at hand we use design to make a positive impact - for our customers around our shared surroundings.
+    </p>
+    <a href="Learnmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Learn more</button></a>
+</div>
+
+<div class="services">
+<img src="images/dpd.png" alt="digital product design" style="padding-left: 80px; margin-top: 25px;">
+</div>
+
+<div class="services" style="padding-left: 30px; padding-top: 30px;">
+    <h4 style="font-family:Inter; font-size:larger; font-weight: 500; color:white;">02</h4>
+    <h3 style="margin-top:-5px; font-family: Inter; font-size: 47px; color: rgb(255, 255, 255); font-weight: 400;">
+        Website design
+    </h3>
+    <p style="font-family: Inter; font-size: 20px; color:#FFFFFF; opacity: 80%; margin-top: -15px; ">
+        Our team of skilled designers creates custom websites tailored to your business needs. From user experience to the visual design, we ensure that your website accurately represents your brand and provides a seamless user experience.
+    </p>
+    <a href="Learnmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Learn more</button></a>
+</div>
+
+<div class="services">
+<img src="images/wd.png" alt="digital product design" style="padding-left: 80px; margin-top: 25px;">
+</div>
+
+<div class="services" style="padding-left: 30px; padding-top: 30px;">
+    <h4 style="font-family:Inter; font-size:larger; font-weight: 500; color:white;">03</h4>
+    <h3 style="margin-top:-5px; font-family: Inter; font-size: 47px; color: rgb(255, 255, 255); font-weight: 400;">
+        Content creation
+    </h3>
+    <p style="font-family: Inter; font-size: 20px; color:#FFFFFF; opacity: 80%; margin-top: -15px; ">
+        Our experienced content creators produce high-quality content that resonates with your target audience. From blogs to social media posts, we help you tell your brand's story through engaging and shareable content.
+    </p>
+    <a href="Learnmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Learn more</button></a>
+</div>
+
+<div class="services">
+<img src="images/cc.png" alt="digital product design" style="padding-left: 80px; margin-top: 25px;">
+</div>
+
+<div class="services" style="padding-left: 30px; padding-top: 30px;">
+    <h4 style="font-family:Inter; font-size:larger; font-weight: 500; color:white;">04</h4>
+    <h3 style="margin-top:-5px; font-family: Inter; font-size: 47px; color: rgb(255, 255, 255); font-weight: 400;">
+        Content strategy
+    </h3>
+    <p style="font-family: Inter; font-size: 20px; color:#FFFFFF; opacity: 80%; margin-top: -15px; ">
+        Our content strategists help you define your content goals, identify your target audience, & develop a plan to produce and distribute high-quality content. We ensure your content supports your overall business objectives & aligns with your brand's voice.
+    </p>
+   <a href="Learnmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Learn more</button></a>
+</div>
+<div class="services">
+<img src="images/cs.png" alt="digital product design" style="padding-left: 80px; margin-top: 25px;">
+</div>
+
+<div class="services" style="padding-left: 30px; padding-top: 30px;">
+    <h4 style="font-family:Inter; font-size:larger; font-weight: 500; color:white;">05</h4>
+    <h3 style="margin-top:-5px; font-family: Inter; font-size: 47px; color: rgb(255, 255, 255); font-weight: 400;">
+        Social media branding
+    </h3>
+    <p style="font-family: Inter; font-size: 20px; color:#FFFFFF; opacity: 80%; margin-top: -15px; ">
+        We help you create a consistent and compelling social media presence that aligns with your brand's values and messaging. Our social media branding services include social media strategy, content creation, and management.
+    </p>
+    <a href="Learnmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Learn more</button></a>
+</div>
+
+<div class="services">
+<img src="images/smb.png" alt="digital product design" style="padding-left: 80px; margin-top: 25px;">
+</div>
+
+</div>
+
+<div style="background-color: #e6e6e6; height: 465px; margin-top: 1970px;">
+    <div class="contact-form">
+            <div class="contact-grid">
+            <h1 style="font-family: Inter; font-size: 40px; color: #3e3e3e; opacity: 90%; font-weight: 400; padding-left: 25px; padding-top: 60px;">
+                Come and work with us
+            </h1>
+            <p style="width: 80%; font-family: Inter; font-size: 20px; color:#3e3e3e; opacity: 80%; padding-left: 30px;">We help brands live on their customer’s mind. We work all over the world remotely, but our headquarter is based in Nepal.</p>
+        </div>
+    
+        <div class="contact-grid"></div>
+        <form style="font-family: Inter; font-size: 20px; padding-top: 60px;">
+            <label for="Name"></label>
+            <input style="padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Name"><br>
+            <label for="Email"></label>
+            <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA; opacity: 100%;  background-color: #3e3e3e; border: 0;" type="email" placeholder="Email address"><br>
+            <label for="Subject"></label>
+            <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Subject"><br>
+            <label for="Budget"></label>
+            <input style="margin-top: 10px; padding: 10px; margin-bottom: 5px; width: 43%; font-family: Inter; color: #888787;  background-color: #3e3e3e; border: 0;" type="number" placeholder="Budget"><br>
+            <label for="Message"></label>
+            <textarea style="padding: 10px; width: 43%; font-family: Inter; color: #787575;  margin-top: 5px; background-color: #3e3e3e;" name="w3review" rows="4" cols="50">Message:</textarea>
+        </form>
+        <a href="submit.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Submit</button></a>
+        </div>
+        </div>
+        <div style="height: 2px; background-color: #3e3e3e; opacity: 80%; margin-top: 40px; width: 100%; margin-left: auto; margin-right: auto;"></div>
+        <p style="font-family: Inter; text-align: center; color: #AAAAAA; padding: 5px;">© 2023 Lukla Media. All Rights Reserved.</p>
+    </div>
+    
+    
+</body>
+</html>

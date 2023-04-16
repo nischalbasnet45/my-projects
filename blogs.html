@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukla Media</title>
+    <link rel="stylesheet" href="blogs.css">
+</head>
+<body style="background-color: #282828;">
+    <style>
+        /* Common styles */
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #282828;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .navbar h1 {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: larger;
+            position: absolute;
+            top: 10px;
+            left: 90px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }
+        .hamburger {
+            display: none;
+        }
+        .mobile-menu {
+            display: none;
+        }
+    
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+            .mobile-menu {
+                display: none;
+                position: relative;
+                top: 10px;
+                right: 0;
+                background-color: #282828;
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+            .mobile-menu a {
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+                color: white;
+                padding-bottom: 50px;
+            }
+        }
+    </style>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector(".mobile-menu");
+            mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+<div class="navbar">
+    <a href="main.html"><img src="images/luklamedia 1.png" alt="Lukla Media" width="52px"></a>
+    <a href="main.html"><h1>Lukla Media</h1></a>
+    <div class="nav-links">
+        <a href="main.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+        <span style="display: block; width: 25px; height: 3px; background-color: white; margin: 5px 0;"></span>
+    </div>
+</div>
+<div class="mobile-menu">
+    <a href="main.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="about.html">About</a>
+</div>
+
+
+<div class="parentContainer">
+    <img src="images/blogheader.png" alt="Blog Header">
+    <div class="centered">
+        <h1 style="font-family: Inter; font-weight: 500; text-align: center; position: relative; color: white;">Lukla Media Blogs</h1>
+        <div style="height: 2px; min-width: 20%; background-color: white; margin: 0 auto;"></div>
+        <p class="paragraph" style="width: 100%; padding-top: 30px; text-align: center; font-family: Inter; font-size: 20px; color:#FFFFFF; opacity: 80%; margin-top: -15px; ">
+            Content design, social media marketing, Organic marketing, etc.
+     </p> 
+    </div>
+</div>
+
+<div class="blogs1">
+    <div class="blogs1-child">
+        <img src="Images/blogs1.png" alt="Blog image 2">
+    </div>
+    <div class="blogs1-children">
+        <div class="text">
+            <h1>How to build your personal brand</h1>
+<h2>Personal branding | <span class="sub-topic"> February 26, 2023 <span></h2>
+<p>Your personal brand is crucial to your success in today's digital world. Discover how to create a powerful brand that stands out from the crowd, attracts new opportunities, and helps you achieve your goals.
+</p>
+<a href="readmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Read more</button></a>
+<ul>
+    <li>5 min read</li>
+</ul>        
+</div>
+</div>
+</div>
+
+<div class="blogs2">
+    <div class="blogs2-child">
+        <img src="Images/blogs2.png" alt="Blog image 2">
+    </div>
+    <div class="blogs2-children">
+        <div class="text">
+            <h1>5 Strategies for Building a Strong Brand</h1>
+<h2>Personal branding | <span class="sub-topic"> February 26, 2023 <span></h2>
+<p>Learn how to build a strong brand that showcases your strengths, builds trust with your audience, and sets you up for success. Discover the top 5 effective strategies for developing your personal brand.
+</p>
+<a href="readmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Read more</button></a>
+<ul>
+    <li>4 min read</li>
+</ul>        
+</div>
+</div>
+</div>
+
+<div class="blogs3">
+    <div class="blogs3-child">
+        <img src="Images/blogs3.png" alt="Blog image 2">
+    </div>
+    <div class="blogs3-children">
+        <div class="text">
+            <h1>Boost Your Brand Without Paid Advertising</h1>
+<h2>Personal branding | <span class="sub-topic"> February 26, 2023 <span></h2>
+<p>Paid advertising can be expensive - but organic marketing can be just as effective. Discover the power of organic marketing and learn how to boost your business without breaking the bank. 
+</p>
+<a href="readmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Read more</button></a>
+<ul>
+    <li>5 min read</li>
+</ul>        
+</div>
+</div>
+</div>
+
+<div class="blogs4">
+    <div class="blogs4-child">
+        <img src="Images/blogs4.png" alt="Blog image 2">
+    </div>
+    <div class="blogs4-children">
+        <div class="text">
+            <h1>Social Media Marketing 101: Tips and Tricks</h1>
+<h2>Personal branding | <span class="sub-topic"> February 26, 2023 <span></h2>
+<p>Social media is a powerful tool for building your brand - but it can be overwhelming to navigate. In this guide, we'll cover the basics of social media marketing and give you tips and tricks for success.
+</p>
+<a href="readmore.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Read more</button></a>
+<ul>
+    <li>3 min read</li>
+</ul>        
+</div>
+</div>
+</div>
+
+
+<div style="background-color: #e6e6e6; height: 465px; margin-top: 50px;">
+    <div class="contact-form">
+            <div class="contact-grid">
+            <h1 style="font-family: Inter; font-size: 40px; color: #3e3e3e; opacity: 90%; font-weight: 400; padding-left: 25px; padding-top: 60px;">
+                Come and work with us
+            </h1>
+            <p style="width: 80%; font-family: Inter; font-size: 20px; color:#3e3e3e; opacity: 80%; padding-left: 30px;">We help brands live on their customer’s mind. We work all over the world remotely, but our headquarter is based in Nepal.</p>
+        </div>
+    
+        <div class="contact-grid"></div>
+        <form style="font-family: Inter; font-size: 20px; padding-top: 60px;">
+            <label for="Name"></label>
+            <input style="padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Name"><br>
+            <label for="Email"></label>
+            <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA; opacity: 100%;  background-color: #3e3e3e; border: 0;" type="email" placeholder="Email address"><br>
+            <label for="Subject"></label>
+            <input style="margin-top: 10px; padding: 10px; width: 43%; font-family: Inter; color: #AAAAAA;  background-color: #3e3e3e; border: 0;" type="text" placeholder="Subject"><br>
+            <label for="Budget"></label>
+            <input style="margin-top: 10px; padding: 10px; margin-bottom: 5px; width: 43%; font-family: Inter; color: #888787;  background-color: #3e3e3e; border: 0;" type="number" placeholder="Budget"><br>
+            <label for="Message"></label>
+            <textarea style="padding: 10px; width: 43%; font-family: Inter; color: #787575;  margin-top: 5px; background-color: #3e3e3e;" name="w3review" rows="4" cols="50">Message:</textarea>
+        </form>
+        <a href="submit.html"><button style="margin-top:7px; background-color:#ec6238; padding: 10px; border: 0; color: white; font-size: medium;">Submit</button></a>
+        </div>
+        </div>
+        <div style="height: 2px; background-color: #3e3e3e; opacity: 80%; margin-top: 30px; width: 100%; margin-left: auto; margin-right: auto;"></div>
+        <p style="font-family: Inter; text-align: center; color: #AAAAAA; padding: 5px;">© 2023 Lukla Media. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

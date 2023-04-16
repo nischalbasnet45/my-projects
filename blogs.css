@@ -1,0 +1,195 @@
+
+
+.parentContainer img{
+    height: 100%;
+    width: 100%;
+    }
+    
+    .parentContainer {
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+    }
+
+
+.centered p{
+    text-align: center;
+}
+
+.centered {
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 30%;
+    }
+
+.text {
+    font-family: Inter;
+    margin-top: 45px;
+    color: #282828;
+}
+
+.text h1{
+    font-weight: 500;
+}
+
+
+.text p {
+font-size: larger;
+}
+
+.text h2{
+font-weight: 500;
+}
+
+.text ul li{
+margin-top: -45px;
+margin-left: 90px;
+}
+
+.sub-topic {
+    font-weight: 300;
+}
+
+.blogs1 {
+    background-color: #D9D9D9;
+    overflow: hidden;
+    width: 94.8%;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 320px;
+}
+
+.blogs1-child {
+    float: left;
+}
+
+.blogs1-children{
+    width: 66%;
+    float: left;
+    padding-left: 40px;
+    margin-top: -10px;
+}
+
+.blogs2 {
+    background-color: #D9D9D9;
+    overflow: hidden;
+    width: 94.8%;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 320px;
+}
+
+.blogs2-child {
+    float: left;
+}
+
+.blogs2-children{
+    width: 66%;
+    float: left;
+    padding-left: 40px;
+    margin-top: -10px;
+}
+
+.blogs3 {
+    background-color: #D9D9D9;
+    overflow: hidden;
+    width: 94.8%;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 320px;
+}
+
+.blogs3-child {
+    float: left;
+}
+
+.blogs3-children{
+    width: 66%;
+    float: left;
+    padding-left: 40px;
+    margin-top: 0px;
+}
+
+.blogs3 {
+    background-color: #D9D9D9;
+    overflow: hidden;
+    width: 94.8%;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 320px;
+}
+
+.blogs3-child {
+    float: left;
+}
+
+.blogs3-children{
+    width: 66%;
+    float: left;
+    padding-left: 40px;
+    margin-top: 0px;
+}
+
+.blogs4 {
+    background-color: #D9D9D9;
+    overflow: hidden;
+    width: 94.8%;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 320px;
+}
+
+.blogs4-child {
+    float: left;
+}
+
+.blogs4-children{
+    width: 66%;
+    float: left;
+    padding-left: 40px;
+    margin-top: -10px;
+}
+
+.contact-form {
+    padding: 0px;
+}
+
+.contact-grid {
+    width: 50%;
+    height: fit-content;
+    float: left;
+    padding: 20px;
+    font-family: Inter;
+}
+
+@media only screen and (max-width: 600px) {
+    .example {background: red;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
